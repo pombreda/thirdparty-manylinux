@@ -15,7 +15,7 @@ for PYBIN in /opt/python/*/bin; do
     ${PYBIN}/pip wheel pyahocorasick --wheel-dir=wheels
     ${PYBIN}/pip wheel intbitset --wheel-dir=wheels
     ${PYBIN}/pip wheel bitarray --wheel-dir=wheels
-    ${PYBIN}/pip wheel lxml==3.6.0 --wheel-dir=wheels
+    ${PYBIN}/pip wheel lxml==3.3.6 --wheel-dir=wheels
     ${PYBIN}/pip wheel tinyarray --wheel-dir=wheels
 
 done
