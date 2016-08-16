@@ -5,10 +5,10 @@ set -e -x
 yum install -y libxslt-devel python-devel libxml2 libxml2-devel libxslt
 
 ls -al /opt/python/
-
-for PYBIN in /opt/python/*/bin; do
-    echo $PYBIN
-done
+rm -rf /opt/python/cp26-*
+rm -rf /opt/python/cp33-*
+rm -rf /opt/python/cp34-*
+ls -al /opt/python/
 
 # Compile wheels
 for PYBIN in /opt/python/*/bin; do
