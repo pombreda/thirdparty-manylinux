@@ -20,6 +20,9 @@ for PYBIN in /opt/python/*/bin; do
 
 done
 
+ls -al /io/wheels
+rm -rf /io/wheels/six*
+
 # Bundle external shared libraries into the wheels
 for whl in wheels/*.whl; do
     auditwheel repair $whl -w /io/wheels
