@@ -20,8 +20,8 @@ for PYBIN in /opt/python/*/bin; do
 
 done
 
-ls -al /io/wheels
-rm -rf /io/wheels/six*
+ls -al wheels
+rm -rf wheels/six*whl
 
 # Bundle external shared libraries into the wheels
 for whl in wheels/*.whl; do
