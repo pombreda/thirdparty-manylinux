@@ -1,0 +1,11 @@
+about_resource: .
+
+name: thirdparty-manylinux
+owner: Philippe Ombredanne
+home_url: https://github.com/pombreda/thirdparty-manylinux
+
+dje_license: CC0-1.0
+license_text_file: public-domain.LICENSE
+license_text_url: https://enterprise.dejacode.com/license_library/Demo/cc0-1.0/#license-text
+vcs_tool: git
+vcs_repository: https://github.com/pombreda/thirdparty-manylinux.git
