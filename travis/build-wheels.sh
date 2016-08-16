@@ -4,6 +4,12 @@ set -e -x
 # Install a system package required by our libraries
 yum install -y libxslt-devel python-devel libxml2 libxml2-devel libxslt
 
+ls -al /opt/python/
+
+for PYBIN in /opt/python/*/bin; do
+    echo $PYBIN
+done
+
 # Compile wheels
 for PYBIN in /opt/python/*/bin; do
     ${PYBIN}/pip wheel pyahocorasick --wheel-dir=wheels
