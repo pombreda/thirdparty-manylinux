@@ -15,7 +15,7 @@ for PYBIN in /opt/python/*/bin; do
     ${PYBIN}/pip wheel pyahocorasick --wheel-dir=wheels
     ${PYBIN}/pip wheel intbitset --wheel-dir=wheels
     ${PYBIN}/pip wheel bitarray --wheel-dir=wheels
-    ${PYBIN}/pip wheel lxml==3.3.6 --wheel-dir=wheels
+    ${PYBIN}/pip wheel lxml==3.6.4 --wheel-dir=wheels
     ${PYBIN}/pip wheel tinyarray --wheel-dir=wheels
 
 done
@@ -24,9 +24,9 @@ ls -al wheels
 rm -rf wheels/six*whl
 
 # Bundle external shared libraries into the wheels
-for whl in wheels/*.whl; do
-    auditwheel repair $whl -w /io/wheels
-done
+#for whl in wheels/*.whl; do
+#    auditwheel repair $whl -w /io/wheels
+#done
 
 # Install packages and test
 # for PYBIN in /opt/python/*/bin/; do
