@@ -12,12 +12,12 @@ ls -al /opt/python/
 
 # Compile wheels
 for PYBIN in /opt/python/*/bin; do
-    ${PYBIN}/pip wheel pyahocorasick --wheel-dir=wheels
     ${PYBIN}/pip wheel intbitset --wheel-dir=wheels
     ${PYBIN}/pip wheel bitarray --wheel-dir=wheels
     ${PYBIN}/pip wheel lxml==3.6.4 --wheel-dir=wheels
     ${PYBIN}/pip wheel tinyarray --wheel-dir=wheels
-
+    ${PYBIN}/pip wheel pyahocorasick --wheel-dir=wheels
+    ${PYBIN}/pip wheel https://github.com/WojciechMula/pyahocorasick/archive/19282329183f465130cb9cb3538c9ac44c9cf796.zip --wheel-dir=wheels
 done
 
 ls -al wheels
