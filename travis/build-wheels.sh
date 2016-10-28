@@ -22,7 +22,7 @@ re2"
 ############################
 for PYBIN in /opt/python/*/bin; do
     for PACKAGE in $PACKAGES; do
-        ${PYBIN}/pip -v wheel --wheel-dir=wheels $PACKAGE
+        ${PYBIN}/pip wheel --wheel-dir=wheels $PACKAGE
     done
 done
 
@@ -30,7 +30,7 @@ done
 ############################
 PY35_BIN=/opt/python/cp35-cp35m/bin
 for PACKAGE in $PACKAGES; do
-    $PY35_BIN/pip -v download -d wheels --no-binary :all: $PACKAGE
+    $PY35_BIN/pip download -d wheels --no-binary :all: $PACKAGE
 done
 
 ls -al wheels
