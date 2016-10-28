@@ -15,7 +15,8 @@ ls -al /opt/python/
 PACKAGES="intbitset bitarray lxml==3.6.4 \
 pyahocorasick \
 https://github.com/WojciechMula/pyahocorasick/archive/19282329183f465130cb9cb3538c9ac44c9cf796.zip \
-re2"
+"
+# re2 requires a vendoring or package of re2
 
 
 # Compile (or fetch pre-built) wheels
@@ -30,6 +31,7 @@ done
 ############################
 PY35_BIN=/opt/python/cp35-cp35m/bin
 for PACKAGE in $PACKAGES; do
+    echo ""
     $PY35_BIN/pip download -d wheels --no-binary :all: $PACKAGE
 done
 
