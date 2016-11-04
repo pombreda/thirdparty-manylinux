@@ -13,7 +13,7 @@ install:
 script:
 - ls -al
 - mkdir wheels
-- docker run --rm -v `pwd`:/io $DOCKER_IMAGE $PRE_CMD /io/travis/build-wheels.sh
+- docker run -v `pwd`:/io $DOCKER_IMAGE $PRE_CMD /io/travis/build-wheels.sh
 - ls -al wheels/
 - ls -al
 deploy:

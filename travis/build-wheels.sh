@@ -18,8 +18,10 @@ simplejson \
 tinyarray \
 pyahocorasick
 "
-# Does not build on old 32 bits Linux lxml==3.6.4 \
-# re2 requires a vendoring or package of re2
+
+# FIXME:
+# Does not build on old 32 bits Linux: lxml==3.6.4 \
+# Does not build: re2 requires a vendoring or package of re2: re2 \
 
 
 # Compile (or fetch pre-built) wheels
@@ -41,7 +43,7 @@ done
 ls -al wheels
 
 # Remove extra dep
-rm -rf wheels/six*whl
+rm -rf wheels/six*
 
 # Bundle external shared libraries into the wheels
 #for whl in wheels/*.whl; do
