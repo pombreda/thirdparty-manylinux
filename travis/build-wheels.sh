@@ -12,9 +12,12 @@ ls -al /opt/python/
 
 # list of packages to build
 ############################
-PACKAGES="intbitset bitarray lxml==3.6.4 \
-pyahocorasick \
-https://github.com/WojciechMula/pyahocorasick/archive/19282329183f465130cb9cb3538c9ac44c9cf796.zip \
+PACKAGES="intbitset \
+bitarray \
+simplejson \
+tinyarray \
+lxml==3.6.4 \
+pyahocorasick
 "
 # re2 requires a vendoring or package of re2
 
