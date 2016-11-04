@@ -16,9 +16,9 @@ PACKAGES="intbitset \
 bitarray \
 simplejson \
 tinyarray \
-lxml==3.6.4 \
 pyahocorasick
 "
+# Does not build on old 32 bits Linux lxml==3.6.4 \
 # re2 requires a vendoring or package of re2
 
 
