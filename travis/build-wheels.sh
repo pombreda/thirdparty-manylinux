@@ -28,7 +28,7 @@ pyahocorasick
 ############################
 for PYBIN in /opt/python/*/bin; do
     for PACKAGE in $PACKAGES; do
-        ${PYBIN}/pip wheel --wheel-dir=wheels $PACKAGE
+        ${PYBIN}/pip wheel --wheel-dir=/io/wheels $PACKAGE
     done
 done
 
@@ -37,13 +37,11 @@ done
 PY35_BIN=/opt/python/cp35-cp35m/bin
 for PACKAGE in $PACKAGES; do
     echo ""
-    $PY35_BIN/pip download -d wheels --no-binary :all: $PACKAGE
+    $PY35_BIN/pip download -d /io/wheels --no-binary :all: $PACKAGE
 done
 
-ls -al wheels
+ls -al /io/wheels
 
-# Remove extra dep
-rm -rf wheels/six*
 
 # Bundle external shared libraries into the wheels
 #for whl in wheels/*.whl; do

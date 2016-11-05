@@ -1,26 +1,28 @@
 matrix:
   include:
-  - sudo: required
-    services:
-    - docker
-    env: DOCKER_IMAGE=quay.io/pypa/manylinux1_x86_64
-  - sudo: required
-    services:
-    - docker
-    env: DOCKER_IMAGE=quay.io/pypa/manylinux1_i686 PRE_CMD=linux32
+      - sudo: required
+        services:
+            - docker
+        env: DOCKER_IMAGE=quay.io/pypa/manylinux1_x86_64
+    
+      - sudo: required
+        services:
+            - docker
+        env: DOCKER_IMAGE=quay.io/pypa/manylinux1_i686 PRE_CMD=linux32
+
 install:
-- docker pull $DOCKER_IMAGE
+    - docker pull $DOCKER_IMAGE
+
 script:
     - ls -al
     - mkdir wheels
     - docker run -v `pwd`:/io $DOCKER_IMAGE $PRE_CMD /io/travis/build-wheels.sh
     - ls -al wheels/
     - ls -al
-    - find / -name "*.whl"
 
 deploy:
-  provider: bintray
-  file: bintray_travis.json
-  user: pombreda
-  key:
-    secure: cUUd2oxvIHSm4oUNsWEQIyZJ99TvHMylIXOgkbVa4SlHGHjRmBb8ufxXD7iy7J+jZjKy0+1Fesu8D2S4I1vc9sLbmK9+tCpd11nvuVcWclgmPRd9G6aNgdkydcxYh5b20aR5ZhrwTrddNhQ4zPmvzMjbh+rkjkb1U0Cm0QNWOVeVk+lstJvPF0x/cZJJgBoNUkLWRnb0FbMM8Wvte7IApcp1oPUmoeaoMdlwYgz+AryjsM2Z+CKjOWaJg0FkrglX6LuucaPzRXfnxsreZzit02HdkcKVdZvi37YOCSrGuh5zTr+fSu8Wg08kx3AHaBkd6AD9ZDYGmCLmEW1is23aesAM178FqwAq9GXiDKgBBcOsaqVe4nN7b5abcrVhOf7oz9gdz1wTG+AFI3euuIF0FR0gOs6uC6BhQzlAbmS566VyERzD4v+4USbsTHPE9jIypn30/QhtKGyEHqRVF9uTbqnV6OBLhpfeyi8ks+BjsT47QRbYBs4l1dGeUK/9480VjUdtr0ra3PT563XSV05SozDweZS6ChE2/NC74MKjyVrMsadg7rsl9/VdLlbs7eOj6/oyaoifEi9e84Z0gHyAFZVmvC4MHgHJmy332xPKarvxodooBYp+yNXIYL/f0ixKCPxuL/kt53HJPwP6UJWi+/8VRu8NyMLCFPTAjBN6HQo=
+    provider: bintray
+    file: bintray_travis.json
+    user: pombreda
+    key:
+        secure: cUUd2oxvIHSm4oUNsWEQIyZJ99TvHMylIXOgkbVa4SlHGHjRmBb8ufxXD7iy7J+jZjKy0+1Fesu8D2S4I1vc9sLbmK9+tCpd11nvuVcWclgmPRd9G6aNgdkydcxYh5b20aR5ZhrwTrddNhQ4zPmvzMjbh+rkjkb1U0Cm0QNWOVeVk+lstJvPF0x/cZJJgBoNUkLWRnb0FbMM8Wvte7IApcp1oPUmoeaoMdlwYgz+AryjsM2Z+CKjOWaJg0FkrglX6LuucaPzRXfnxsreZzit02HdkcKVdZvi37YOCSrGuh5zTr+fSu8Wg08kx3AHaBkd6AD9ZDYGmCLmEW1is23aesAM178FqwAq9GXiDKgBBcOsaqVe4nN7b5abcrVhOf7oz9gdz1wTG+AFI3euuIF0FR0gOs6uC6BhQzlAbmS566VyERzD4v+4USbsTHPE9jIypn30/QhtKGyEHqRVF9uTbqnV6OBLhpfeyi8ks+BjsT47QRbYBs4l1dGeUK/9480VjUdtr0ra3PT563XSV05SozDweZS6ChE2/NC74MKjyVrMsadg7rsl9/VdLlbs7eOj6/oyaoifEi9e84Z0gHyAFZVmvC4MHgHJmy332xPKarvxodooBYp+yNXIYL/f0ixKCPxuL/kt53HJPwP6UJWi+/8VRu8NyMLCFPTAjBN6HQo=
