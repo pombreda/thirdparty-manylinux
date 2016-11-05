@@ -11,11 +11,13 @@ matrix:
 install:
 - docker pull $DOCKER_IMAGE
 script:
-- ls -al
-- mkdir wheels
-- docker run -v `pwd`:/io $DOCKER_IMAGE $PRE_CMD /io/travis/build-wheels.sh
-- ls -al wheels/
-- ls -al
+    - ls -al
+    - mkdir wheels
+    - docker run -v `pwd`:/io $DOCKER_IMAGE $PRE_CMD /io/travis/build-wheels.sh
+    - ls -al wheels/
+    - ls -al
+    - find / -name "*.whl"
+
 deploy:
   provider: bintray
   file: bintray_travis.json
