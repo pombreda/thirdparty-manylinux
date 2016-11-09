@@ -16,7 +16,8 @@ PACKAGES="intbitset \
 bitarray \
 simplejson \
 tinyarray \
-pyahocorasick
+pyahocorasick \
+billiard
 "
 
 # FIXME:
