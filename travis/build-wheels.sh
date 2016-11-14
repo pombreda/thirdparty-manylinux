@@ -17,7 +17,8 @@ bitarray \
 simplejson \
 tinyarray \
 pyahocorasick \
-billiard
+billiard \
+psutil
 "
 
 # FIXME:
