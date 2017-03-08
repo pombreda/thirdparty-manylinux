@@ -18,7 +18,13 @@ simplejson \
 tinyarray \
 pyahocorasick \
 billiard \
-psutil
+psutil \
+pycosat \
+conda \
+enum34 \
+menuinst \
+ruamel.yaml \
+requests
 "
 
 # FIXME:
