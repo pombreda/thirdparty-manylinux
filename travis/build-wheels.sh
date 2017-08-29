@@ -24,7 +24,8 @@ conda \
 enum34 \
 menuinst \
 ruamel.yaml \
-requests
+requests \
+pycryptodome
 "
 
 # FIXME:
