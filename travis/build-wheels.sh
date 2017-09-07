@@ -19,11 +19,6 @@ tinyarray \
 pyahocorasick \
 billiard \
 psutil \
-pycosat \
-conda \
-enum34 \
-menuinst \
-ruamel.yaml \
 requests \
 pycryptodome
 "
