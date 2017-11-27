@@ -4,6 +4,7 @@ set -e -x
 # Install a system package required by our libraries
 yum install -y libxslt-devel python-devel libxml2 libxml2-devel libxslt
 
+
 ls -al /opt/python/
 rm -rf /opt/python/cp26-*
 rm -rf /opt/python/cp33-*
