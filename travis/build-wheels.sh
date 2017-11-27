@@ -6,11 +6,19 @@ yum install -y libxslt-devel python-devel libxml2 libxml2-devel libxslt
 
 
 ls -al /opt/python/
+
 rm -rf /opt/python/cp26-*
 rm -rf /opt/python/cp33-*
 rm -rf /opt/python/cp34-*
 rm -rf /opt/python/cp35-*
+rm -rf /opt/_internal/cpython-2.6.*
+rm -rf /opt/_internal/cpython-3.3.*
+rm -rf /opt/_internal/cpython-3.4.*
+rm -rf /opt/_internal/cpython-3.5.*
+
 ls -al /opt/python/
+
+
 
 # list of packages to build
 ############################
