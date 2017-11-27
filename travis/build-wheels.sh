@@ -9,6 +9,7 @@ ls -al /opt/python/
 rm -rf /opt/python/cp26-*
 rm -rf /opt/python/cp33-*
 rm -rf /opt/python/cp34-*
+rm -rf /opt/python/cp35-*
 ls -al /opt/python/
 
 # list of packages to build
@@ -21,7 +22,8 @@ pyahocorasick \
 billiard \
 psutil \
 requests \
-pycryptodome
+pycryptodome \
+lxml
 "
 
 # FIXME:
