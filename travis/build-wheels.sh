@@ -49,10 +49,11 @@ done
 
 # Fetch sources
 ############################
-# we use the latest PYBIN defined
+# we use 2.7 for downloads
+export PIPBIN=/opt/python/cp27-cp27m/bin/pip
 for PACKAGE in $PACKAGES; do
     echo ""
-    $PY_BIN/pip download -d /io/wheels --no-binary :all: $PACKAGE
+    $PIPBIN/pip download -d /io/wheels --no-binary :all: $PACKAGE
 done
 
 ls -al /io/wheels
