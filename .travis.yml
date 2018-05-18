@@ -22,6 +22,7 @@ script:
 
 deploy:
     provider: bintray
+    skip_cleanup: true
     file: bintray_travis.json
     user: pombreda
     key:
