@@ -49,10 +49,10 @@ done
 
 # Fetch sources
 ############################
-PY35_BIN=/opt/python/cp35-cp35m/bin
+# we use the latest PYBIN defined
 for PACKAGE in $PACKAGES; do
     echo ""
-    $PY35_BIN/pip download -d /io/wheels --no-binary :all: $PACKAGE
+    $PY_BIN/pip download -d /io/wheels --no-binary :all: $PACKAGE
 done
 
 ls -al /io/wheels
