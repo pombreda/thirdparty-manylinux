@@ -53,7 +53,7 @@ done
 export PIPBIN=/opt/python/cp27-cp27m/bin/pip
 for PACKAGE in $PACKAGES; do
     echo ""
-    $PIPBIN/pip download -d /io/wheels --no-binary :all: $PACKAGE
+    $PIPBIN download -d /io/wheels --no-binary :all: $PACKAGE
 done
 
 ls -al /io/wheels
