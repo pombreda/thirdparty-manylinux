@@ -31,7 +31,8 @@ billiard \
 psutil \
 requests \
 pycryptodome \
-lxml
+lxml \
+url
 "
 
 # FIXME:
