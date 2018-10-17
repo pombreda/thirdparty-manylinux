@@ -38,7 +38,8 @@ psutil \
 requests \
 pycryptodome \
 lxml \
-url==0.1.6
+url==0.1.6 \
+markupsafe
 "
 
 # FIXME:
