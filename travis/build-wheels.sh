@@ -38,8 +38,8 @@ psutil \
 requests \
 pycryptodome \
 lxml \
-url==0.1.6\
-scandir
+url==0.1.6 \
+scandir 
 "
 
 # FIXME:
