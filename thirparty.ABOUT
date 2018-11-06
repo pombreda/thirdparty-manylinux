@@ -1,7 +1,6 @@
 about_resource: .
 
 name: thirdparty-manylinux
-owner: Philippe Ombredanne
 home_url: https://github.com/pombreda/thirdparty-manylinux
 
 dje_license: CC0-1.0
