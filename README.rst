@@ -1,5 +1,8 @@
 # thirdparty-manylinux
- A multi-linux builder loop for packages using Travis and uploading binaries to Bintray. Supports many Linux distros with a single binary (32 and 64 bits on Intel arches) in the most compatible way.
+
+A multi-linux builder loop for packages using Travis and uploading binaries to 
+Bintray. Supports many Linux distros with a single binary (32 and 64 bits on
+Intel architectures) in the most compatible way.
 
 This repo is a builder of thidrparty components.
 The repo itself is in the public domain. 

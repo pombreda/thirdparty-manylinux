@@ -39,8 +39,10 @@ requests \
 pycryptodome \
 lxml \
 url==0.1.6 \
-markupsafe
+markupsafe \
+scandir 
 "
+#url \
 
 # FIXME:
 # Does not build on old 32 bits Linux: lxml==3.6.4 \
