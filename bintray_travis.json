@@ -1,11 +1,11 @@
 {
     "package": {
-        "name": "thirdparty",
+        "name": "thirdparty2",
         "repo": "thirdparty",
         "subject": "pombreda"
     },
     "version": {
-        "name": "3"
+        "name": "1"
     },
     "files": [
         {
