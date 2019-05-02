@@ -42,7 +42,8 @@ url==0.1.6 \
 markupsafe \
 scandir \
 pyyaml==3.12 \
-pyyaml 
+pyyaml \
+pyroaring 
 "
 
 # FIXME:
