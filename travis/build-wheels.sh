@@ -44,8 +44,9 @@ scandir \
 pyyaml==3.12 \
 pyyaml \
 pyroaring \
-hyperscan
+edlib 
 "
+# fails hyperscan \
 
 # FIXME:
 # Does not build on old 32 bits Linux: lxml==3.6.4 \
