@@ -44,7 +44,8 @@ scandir \
 pyyaml==3.12 \
 pyyaml \
 pyroaring \
-edlib 
+edlib \
+cdifflib 
 "
 # fails hyperscan \
 
