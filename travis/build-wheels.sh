@@ -43,7 +43,8 @@ markupsafe \
 scandir \
 pyyaml==3.12 \
 pyyaml \
-pyroaring 
+pyroaring \
+hyperscan
 "
 
 # FIXME:
