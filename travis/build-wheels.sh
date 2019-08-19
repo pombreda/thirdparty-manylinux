@@ -38,6 +38,7 @@ psutil \
 requests \
 pycryptodome \
 lxml \
+url \
 url==0.1.6 \
 markupsafe \
 scandir \
