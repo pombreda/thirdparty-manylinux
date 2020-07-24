@@ -28,22 +28,15 @@ ls -al /opt/python/
 PACKAGES="intbitset \
 bitarray \
 simplejson \
-tinyarray \
 pyahocorasick \
-billiard \
-psutil \
 requests \
 pycryptodome \
 lxml \
-url \
-url==0.1.6 \
+urlpy \
 markupsafe \
 scandir \
 pyyaml==3.12 \
-pyyaml \
-pyroaring \
-edlib \
-cdifflib 
+pyyaml  
 "
 # fails hyperscan \
 
