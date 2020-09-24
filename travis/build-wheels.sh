@@ -43,7 +43,8 @@ pyyaml==3.12 \
 pyyaml \
 pyroaring \
 edlib \
-cdifflib 
+cdifflib \
+nltk
 "
 # fails hyperscan \
 
