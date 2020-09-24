@@ -27,7 +27,6 @@ ls -al /opt/python/
 # list of packages to build
 ############################
 PACKAGES="intbitset \
-intbitset==2.4.1 \
 bitarray \
 simplejson \
 tinyarray \
