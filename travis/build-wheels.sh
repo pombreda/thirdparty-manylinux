@@ -10,12 +10,10 @@ ls -al /opt/python/
 # ... then delete the python we do not care for such that no build is done for these:
 # only keep 2.7 and 3.6
 rm -rf /opt/python/cp26-*
-rm -rf /opt/python/cp27-*
 rm -rf /opt/python/cp33-*
 rm -rf /opt/python/cp34-*
 rm -rf /opt/python/cp35-*
 rm -rf /opt/_internal/cpython-2.6.*
-rm -rf /opt/_internal/cpython-2.7.*
 rm -rf /opt/_internal/cpython-3.3.*
 rm -rf /opt/_internal/cpython-3.4.*
 rm -rf /opt/_internal/cpython-3.5.*
